@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brawl Lite</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hud">
+        <h1>Brawl Lite</h1>
+        <p class="tag">Мини-арена в духе Brawl Stars</p>
+        <div class="panel">
+          <div>❤️ HP: <span id="hpValue">100</span></div>
+          <div>⭐ Очки: <span id="scoreValue">0</span></div>
+          <div>💥 Супер: <span id="superValue">0%</span></div>
+          <div>👾 Врагов: <span id="enemyValue">0</span></div>
+        </div>
+        <div class="controls">
+          <p><strong>WASD</strong> — движение</p>
+          <p><strong>Мышь</strong> — прицеливание</p>
+          <p><strong>ЛКМ</strong> — атака</p>
+          <p><strong>Space</strong> — супер-способность</p>
+        </div>
+        <button id="restartButton" hidden>Новая катка</button>
+      </section>
+      <section class="arena-wrap">
+        <canvas id="game" width="960" height="540"></canvas>
+      </section>
+    </main>
+    <script src="game.js" defer></script>
+  </body>
+</html>
