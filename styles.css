@@ -1,0 +1,86 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: radial-gradient(circle at top, #1f2d5b, #0b1022 65%);
+  color: #eff2ff;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.hud {
+  background: linear-gradient(180deg, #1a2144, #11162e);
+  border: 1px solid #313e76;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.tag {
+  margin-top: 0.2rem;
+  color: #bcc8ff;
+}
+
+.panel {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.controls {
+  margin-top: 1rem;
+  line-height: 1.25;
+  color: #ccd5ff;
+}
+
+#restartButton {
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem;
+  color: #11162e;
+  background: #ffc84d;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.arena-wrap {
+  border-radius: 16px;
+  border: 1px solid #313e76;
+  background: #0f1430;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
